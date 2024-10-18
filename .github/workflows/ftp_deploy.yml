@@ -1,37 +1,34 @@
-name: Deploy React App to Hostinger
+name: Deploy Next.js App to Hostinger
 
 on:
   push:
     branches:
-      - main # Change this to your deployment branch if it's not `main`
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "18"
 
-      # Step 3: Install dependencies and build the project
       - name: Install dependencies and build
         run: |
           npm install
           npm run build
+          npm run export
 
-      # Step 4: Deploy to Hostinger using FTP
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp.hammzadev.me
           username: u625255424.hammzadev.me
           password: Ha@122121
-          local-dir: build/
+          local-dir: out/
           server-dir: public_html/
