@@ -33,5 +33,5 @@ jobs:
           server: ftp.hammzadev.me
           username: u625255424.hammzadev.me
           password: Ha@122121
-          local-dir: build
+          local-dir: build/
           server-dir: public_html
