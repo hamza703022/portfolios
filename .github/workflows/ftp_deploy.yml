@@ -37,3 +37,4 @@ jobs:
           password: Ha@122121
           local-dir: out/ # This should match the output directory
           server-dir: /
+          clean: true
