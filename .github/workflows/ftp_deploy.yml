@@ -23,6 +23,12 @@ jobs:
           npm install
           npm run build
 
+      - name: Delete previous files from public_html
+        run: |
+          apt-get update
+          apt-get install -y lftp
+          lftp -u u625255424.hammzadev,Ha@122121 ftp.hammzadev.me -e "rm -rf public_html/*; bye"
+
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
@@ -30,4 +36,4 @@ jobs:
           username: u625255424.hammzadev
           password: Ha@122121
           local-dir: out/ # This should match the output directory
-          server-dir: public_html/
+          server-dir: /
