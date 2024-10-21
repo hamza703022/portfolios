@@ -22,7 +22,7 @@ jobs:
         run: |
           npm install
           npm run build
-          npm run start
+          # npm run start
 
       - name: Deploy to Hostinger via FTP
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
