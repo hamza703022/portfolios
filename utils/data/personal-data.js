@@ -13,6 +13,6 @@ export const personalData = {
   twitter: "https://twitter.com/said7388",
   stackOverflow: "https://stackoverflow.com/users/27813400/muhammad-hamza",
   linktree: "https://linktr.ee/hammza_mehar",
-  devUsername: "hammza-dev",
+  devUsername: "said7388",
   resume: "https://tr.ee/3xE719kHjP",
 };
