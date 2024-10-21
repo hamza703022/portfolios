@@ -29,5 +29,5 @@ jobs:
           server: ftp.hammzadev.me
           username: u625255424.hammzadev.me
           password: Ha@122121
-          local-dir: out/
+          local-dir: out/ # This should match the output directory
           server-dir: public_html/

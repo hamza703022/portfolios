@@ -17,6 +17,7 @@ module.exports = {
         pathname: "**",
       },
     ],
-  }
-  // output: "export",
+  },
+  output: "export",
+  distDir: "out",
 };
