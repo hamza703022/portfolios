@@ -30,4 +30,4 @@ jobs:
           username: u625255424.hammzadev
           password: Ha@122121
           local-dir: out/ # This should match the output directory
-          server-dir: public_html
+          server-dir: public_html/
