@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "export": "next export"
+    "start": "next start"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
