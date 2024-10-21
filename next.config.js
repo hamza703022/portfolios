@@ -17,6 +17,7 @@ module.exports = {
         pathname: "**",
       },
     ],
+    unoptimized: true, // Disable image optimization
   },
   output: "export",
   distDir: "out",
