@@ -27,7 +27,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
         with:
           server: ftp.hammzadev.me
-          username: u625255424.hammzadev.me
+          username: u625255424.hammzadev
           password: Ha@122121
           local-dir: out/ # This should match the output directory
           server-dir: public_html/
